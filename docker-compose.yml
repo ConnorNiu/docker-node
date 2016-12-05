@@ -1,0 +1,38 @@
+nginx:
+    build: connorniu/nginx
+    links:
+        - node1:node1
+        - node2:node2
+        - node3:node3
+    ports:
+        - "80:80"
+
+node1:
+    build: connorniu/node
+    links:
+        - redis
+    ports:
+        - "8080"
+    volumes:
+        - node:/src
+node2:
+    build: connorniu/node
+    links:
+        - redis
+    ports:
+        - "8080"
+    volumes:
+        - node:/src
+node3:
+    build: connorniu/node
+    links:
+        - redis
+    ports:
+        - "8080"
+    volumes:
+        - node:/src
+
+redis:
+    image: redis
+    ports:
+        - “6379"
