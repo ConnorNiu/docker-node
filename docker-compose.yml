@@ -1,14 +1,16 @@
 nginx:
-    build: connorniu/nginx
-    links:
-        - node1:node1
-        - node2:node2
-        - node3:node3
-    ports:
-        - "80:80"
+  image: connorniu/nginx
+  links:
+      - node1:node1
+      - node2:node2
+      - node3:node3
+  ports:
+      - "80:80"
+  volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
 
 node1:
-    build: connorniu/node
+    build: ./node
     links:
         - redis
     ports:
@@ -16,7 +18,7 @@ node1:
     volumes:
         - node:/src
 node2:
-    build: connorniu/node
+    build: ./node
     links:
         - redis
     ports:
@@ -24,7 +26,8 @@ node2:
     volumes:
         - node:/src
 node3:
-    build: connorniu/node
+#    image: connorniu/node
+    build: ./node
     links:
         - redis
     ports:
@@ -35,4 +38,4 @@ node3:
 redis:
     image: redis
     ports:
-        - “6379"
+        - "6379"
