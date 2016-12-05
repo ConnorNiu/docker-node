@@ -1,15 +1,10 @@
-FROM node:7.1.0-alpine
+FROM node:5.2.0-wheezy
 
-
-ENV HTTP_PORT 8080
-
-RUN apk add --update bash
-
+RUN mkdir -p /src
 
 WORKDIR /src
 
-RUN npm --registry=https://registry.npm.taobao.org --disturl=https://npm.taobao.org/dist install
+#install nodejs dependencies
+RUN npm install
 
-EXPOSE 8080
-
-CMD ["npm", "start"]
+CMD npm install && node index.js
