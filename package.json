@@ -1,10 +1,17 @@
 {
-  "name": "Docker Node",
+  "name": "adminbase",
   "version": "1.0.0",
-  "description": "",
+  "description": "adminbase",
   "main": "index.js",
-  "author": "Connor Niu",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint src"
+  },
+  "author": "Connor",
   "license": "ISC",
+  "devDependencies": {
+    "mongoose": "^4.3.6"
+  },
   "dependencies": {
     "mongoose": "^4.3.6"
   }
