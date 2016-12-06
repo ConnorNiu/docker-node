@@ -1,0 +1,11 @@
+{
+  "name": "Docker Node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Connor Niu",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.3.6"
+  }
+}
