@@ -10,6 +10,8 @@ RUN npm install -g bower gulp
 
 RUN apk add --update bash
 
+RUN rm -rf /var/cache/apk/*
+
 #RUN npm install
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
 
