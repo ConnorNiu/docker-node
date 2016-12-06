@@ -6,6 +6,8 @@ WORKDIR /src
 
 RUN npm install webpack -g
 
+RUN npm install -g bower gulp
+
 RUN apk add --update bash
 
 #RUN npm install
