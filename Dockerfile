@@ -12,7 +12,7 @@ RUN apk add --update bash
 
 RUN rm -rf /var/cache/apk/*
 
-RUN npm install -g webpack
+RUN npm install -g webpack babel-cli
 
 #RUN npm install
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
