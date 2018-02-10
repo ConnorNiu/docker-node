@@ -42,3 +42,10 @@ docker pull registry-internal.cn-beijing.aliyuncs.com/songshenzong/node
 docker pull registry-vpc.cn-beijing.aliyuncs.com/songshenzong/node
 ```
 
+
+## Installed
+
+- webpack
+- bower
+- gulp
+- cnpm
