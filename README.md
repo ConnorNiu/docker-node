@@ -1,5 +1,8 @@
 # Docker Image packaging for Node
 
+![docker hub](https://img.shields.io/docker/pulls/songshenzong/node.svg?style=flat-square)
+![docker hub](https://img.shields.io/docker/stars/songshenzong/node.svg?style=flat-square)
+
 
 ##### 基于官方镜像 Based Official Image
 
