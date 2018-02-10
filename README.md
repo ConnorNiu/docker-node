@@ -7,7 +7,7 @@
 ##### 基于官方镜像 Based Official Image
 
 ```bash
-node:7.2.0-alpine
+node:alpine
 ```
 
 

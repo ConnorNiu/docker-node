@@ -1,4 +1,4 @@
-FROM node:7.2.0-alpine
+FROM node:alpine
 
 RUN mkdir -p /src \
     && npm install -g webpack gulp bower \
