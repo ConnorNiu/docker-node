@@ -1,9 +1,10 @@
-[![Songshenzong](https://songshenzong.com/images/logo.png)](https://songshenzong.com)
+[![Songshenzong](https://cdn.songshenzong.com/images/logo.png)](https://songshenzong.com)
 
 [![Docker Stars](https://img.shields.io/docker/stars/songshenzong/node.svg?style=flat-square)](https://hub.docker.com/r/songshenzong/php/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/songshenzong/node.svg?style=flat-square)](https://hub.docker.com/r/songshenzong/php/)
 [![Docker Automated build](https://img.shields.io/docker/automated/songshenzong/node.svg?style=flat-square)](https://hub.docker.com/r/songshenzong/php/)
 [![Docker Build Status](https://img.shields.io/docker/build/songshenzong/node.svg?style=flat-square)](https://hub.docker.com/r/songshenzong/php/)
+
 
 ## 关于 About
 Docker Image packaging for Node
